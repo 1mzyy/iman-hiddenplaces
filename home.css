@@ -1,0 +1,61 @@
+/* RESET DEFAULTS */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER ALWAYS FULL WIDTH */
+.site-header {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* TEXT SECTION */
+.header-text-group {
+    padding: 20px 0 10px 0;
+    color: #4C3F2E;
+}
+
+.headermain {
+    font-family: "Pacifico", cursive;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.headertext {
+    font-family: "Comfortaa", sans-serif;
+    margin: 5px 0 15px 0;
+    font-size: 0.95rem;
+}
+
+/* make the header a positioning container */
+.site-header {
+    position: relative;
+}
+
+/* move both images upward */
+.headerimage {
+    position: relative;
+    top: 0px;   /* move up - adjust as needed */
+    z-index: 1;
+}
+
+.scallopheader {
+    position: relative;
+    top: -26.5px;   /* move up more than photo - adjust */
+    z-index: 2;
+}
+
+/* put text ON TOP of the images */
+.header-text-group {
+    position: absolute;
+    top: 2px;     /* moves text downward or upward */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+}
