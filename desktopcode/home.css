@@ -462,15 +462,7 @@ body {
   padding-right: 30px;
 }
 
-.social-icons {
-  display: flex;
-  gap: 20px;
-}
 
-.social-icons a img {
-  width: 30px; /* Size for social media icons */
-  height: 30px;
-}
 
 .contact-details p {
   font-family: Comfortaa, sans-serif;
