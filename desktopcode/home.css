@@ -419,58 +419,49 @@ body {
 
 /* --- FOOTER --- */
 
-/* Footer styles */
 .footer {
   background-color: #E7DCC5; /* Light beige background */
-  padding: 40px;
+  padding: 40px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-radius: 20px 20px 0 0; /* Rounded top corners */
+  text-align: center;
+  width: 100%;
   margin-top: 50px;
+  border-radius: 20px 20px 0 0; /* Rounded top corners */
 }
 
+/* Footer Content */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-}
-
-.footer-left {
-  flex: 1;
-  padding-left: 30px;
+  gap: 20px; /* Space between the content */
 }
 
 .footer-left h2 {
   font-family: "Pacifico", cursive;
-  font-size: 36px;
+  font-size: 36px; /* Larger font size for the title */
   color: #4C3F2E;
   margin-bottom: 10px;
 }
 
 .footer-left p {
   font-family: Comfortaa, sans-serif;
-  font-size: 18px;
+  font-size: 18px; /* Larger font size for the paragraph */
   color: #4C3F2E;
+  margin-bottom: 10px;
 }
-
-.footer-right {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 30px;
-}
-
-
 
 .contact-details p {
   font-family: Comfortaa, sans-serif;
-  font-size: 16px;
+  font-size: 22px; /* Increased font size for contact info */
   color: #4C3F2E;
   margin: 5px 0;
+  line-height: 1.5;
 }
-
+  
 /* Responsive Design for Mobile */
 @media only screen and (max-width: 768px) {
   .footer {
