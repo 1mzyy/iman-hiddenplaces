@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day Planner</title>
+  <link rel="stylesheet" href="planday.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="site-header">
+  <div class="nav-bar">
+    <div class="nav-bar">
+      <a href="/home" class="nav-links">Home</a>
+      <a href="visit.html" class="nav-links">Visit</a>
+    </div>
+
+    <div class="header-titles">
+      <h1 class="header-main">Reconnect</h1>
+      <p class="header-sub">Healing since 2020</p>
+    </div>
+
+    <div class="nav-bar">
+      <a href="/blog" class="nav-links">Blog</a>
+      <a href="/planday" class="nav-links">Plan a Day</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Plan your Day Out with Reconnect </h1>
+  </div>
+
+  <div class="hero-image">
+    <img src="/images/photos/header.jpg" alt="Hero Image">
+  </div>
+</section>
+
+
+  <section class="plan-about">
+
+    <div class="plan">
+      <h4 class="plan-title">Plan your Day</h4>
+      <img src="/images/photos/extrathings/underlineBeige.png" class="title-underline-plan" alt="underline">
+      <p class="plan-details">
+        Choose a place and generate a random day filled with fun activities.
+        Create, explore, and save a day that helps you reconnect and enjoy the moment.
+      </p>
+    </div>
+
+    <div class="plan-image">
+      <img src="/images/photos/plan.jpg" alt="spacep">
+    </div>
+
+  </section>
+
+<div class="planner-wrapper">
+  <section class="planner">
+
+  <h1>Plan a Day</h1>
+  <img src="/images/photos/extrathings/underlineBeige.png" class="title-underline-planner" alt="underline">
+
+  <select id="placeSelect">
+    <option value="">Choose a place</option>
+    <option value="space">National Space Centre</option>
+    <option value="arcade">Lane 7</option>
+    <option value="zoo">Manor Farm Park and Woodlands</option>
+  </select>
+
+  <button onclick="generateDay()">Generate Day</button>
+  <button class="secondary" onclick="saveDay()">Save This Day</button>
+
+  <div id="planOutput" class="plan-output"></div>
+  <div id="savedDays" class="saved-days"></div>
+</section>
+
+
+<script src="planday.js"></script>
+  </section>
+</div>
+
+        <!-- Footer section -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-left">
+      <h2>Contact Us...</h2>
+      <p>Follow us on our socials for discounts and new events going on!</p>
+    </div>
+
+    <div class="contact-details">
+      <p>@ReconnectwithYourself</p>
+      <p>ReconnectwithYourself@info.com</p>
+      <p>+45 12 34 56 78</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
