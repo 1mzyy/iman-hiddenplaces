@@ -196,7 +196,7 @@ body {
 .title-underline-space {
   width: 100%;
   max-width: 650px;
-  margin-left: 40px;
+  margin-left: 200px;
   margin-bottom: 50px;
 }
 
@@ -230,7 +230,7 @@ body {
   gap: 20px;
 }
 
-.spacec-image {
+.manor-image {
   flex: 1;
 
   display: flex;
@@ -238,7 +238,7 @@ body {
   align-items: center;
 }
 
-.spacec-image img {
+.manor-image img {
   width: 100%;
   max-width: 500px;
   height: 300px;
@@ -259,7 +259,7 @@ body {
     text-align: center;
   }
 
-  .spacec-image img {
+  .manor-image img {
     height: 250px;
     border-radius: 30px;
   }
@@ -278,7 +278,7 @@ body {
   font-family: Pacifico, cursive;
   font-size: 70px;
   color: #4C3F2E;
-
+font-weight: lighter;
   margin-top: 20px;
   margin-bottom: 30px;
 }
