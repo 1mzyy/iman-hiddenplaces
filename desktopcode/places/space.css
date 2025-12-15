@@ -189,12 +189,15 @@ body {
   font-size: 70px;
   font-weight: lighter;
   color: #4C3F2E;
-  margin-bottom: 40px;
+  margin-left: 30px;
+  
 }
 
 .title-underline-space {
   width: 100%;
-  max-width: 500px;
+  max-width: 650px;
+  margin-left: 40px;
+  margin-bottom: 50px;
 }
 
 .title-underline-space img {
@@ -283,8 +286,7 @@ body {
 .title-underline-info {
   width: 100%;
   max-width: 500px;
-
-  margin: -40px 10px 20px;
+  margin: -40px 10px 50px;
   padding-bottom: 10px;
 }
 
@@ -378,70 +380,99 @@ body {
 .events-section {
   background-color: #F9F4EA;
   padding: 70px 40px;
-  text-align: center;
+  text-align: left;
 }
 
-.events-title {
+.event-title {
   font-family: "Pacifico", cursive;
-  font-size: 50px;
+  font-size: 70px;
+  font-weight: lighter;
   color: #4C3F2E;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 
-/* GRID LAYOUT */
+.title-underline-events {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 60px;
+
+}
+
+/* GRID */
 .events-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 80px 80px; /* row gap | column gap */
+
   max-width: 1200px;
   margin: 0 auto;
+
+  justify-items: center;
+  align-items: start;
 }
 
 /* CARD */
 .event-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+
+  max-width: 280px;
 }
 
-/* IMAGE CONTAINER */
+/* IMAGE */
 .event-image {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+  width: 220px;
   overflow: hidden;
-  background-color: #F9F4EA;
+  border-radius: 120px 120px 0 0;
   margin-bottom: 20px;
 }
 
 .event-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 /* TEXT */
 .event-card h3 {
   font-family: "Comfortaa", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   color: #4C3F2E;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  white-space: nowrap;
 }
 
 .event-date {
   font-family: "Comfortaa", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  color: #4C3F2E;
   margin-bottom: 10px;
 }
 
 .event-desc {
   font-family: "Comfortaa", sans-serif;
   font-size: 16px;
-  color: #4C3F2E;
   line-height: 1.5;
-  padding: 0 10px;
 }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
 
 
 /* =========================
