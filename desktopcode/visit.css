@@ -134,6 +134,7 @@ body {
   font-weight: lighter;
   color: #4C3F2E;
   margin-bottom: 20px;
+  
 }
 
 .hero-text {
@@ -144,9 +145,15 @@ body {
 
 /* General Styles for the Pick your City Section */
 .pick-city {
-  background-color: #F9F4EA; /* Light beige background */
-  padding: 50px 20px;
-  text-align: center;
+  padding: 20px 20px;
+}
+
+.title-underline {
+  margin: 10px 0 30px 40px;
+}
+
+.section-info-city {
+  margin-top: 20px;
 }
 
 .pick-city-title {
@@ -162,47 +169,52 @@ body {
   display: flex;
   justify-content: flex-start;
   text-align: left;
+  margin-left: 50px;
 }
 
 .title-underline {
   width: 100%;
   max-width: 500px;
-  margin: 0 2000px 0 0 ;
+  margin: 10px 0 30px 40px;
 }
 
 .section-info-city {
   font-family: Comfortaa, sans-serif;
-  font-size: 30px;
+  font-size: 26px;
   color: #4C3F2E;
   line-height: 1.6;
-  width: 50%; /* Adjust width to fit properly */
-  display: flex;
-  justify-content: flex-start; /* Align content to the left */
-  text-align: left; /* Ensure text inside is aligned to the left */
-  margin-right: 250px; /* Adds space between the text and the cards */
-  margin-bottom: 40px;
+  margin-top: 20px;
+  font-weight: 400;
 }
+
+
+.city-text {
+  width: 50%;
+}
+
 
 /* Style for the City Cards */
 .city-cards {
   display: flex;
-  justify-content: flex-end; /* Align the cards to the right */
+  gap: 30px;
   align-items: flex-end;
-  gap: 20px; /* Add space between cards */
-  margin-top: 40px;
-  text-align: left; /* Ensure text inside the cards is left-aligned */
-
+  margin-top: 100px;
 }
 
-.city-cards .leicester-card, .city-cards .more-to-come-card {
+
+.city-cards .leicester-card,
+.city-cards .more-to-come-card {
   background-color: #E7DCC5;
   padding: 40px;
   border-radius: 200px 200px 0 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
-  width: 18%; /* Cards take up 30% of the container */
-  height: 400px;
-  align-items: baseline;
+  width: 360px;
+  height: 420px;          /* 👈 REQUIRED */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
+
 
 .more-to-come-card {
     opacity: 40%;
@@ -215,8 +227,17 @@ body {
   margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 80px;
 }
+
+.city-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  padding: 60px 50px;      
+  gap: 60px;
+}
+
 
 .leicester-card p {
   font-family: Comfortaa, sans-serif;
@@ -224,7 +245,7 @@ body {
   color: #4C3F2E;
   line-height: 1.6;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   font-weight: 400;
 }
 
