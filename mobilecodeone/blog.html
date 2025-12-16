@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconnect - iPhone 14 Pro Max View</title>
+    <link rel="stylesheet" href="home.css">
+
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<body>
+  <!-- Header section -->
+  <header class="site-header">
+    <!-- Content on top of the wave -->
+    <div class="nav-bar">
+ 
+
+      <div class="header-titles">
+        <h1 class="header-main">Reconnect</h1>
+        <p class="header-sub">Healing since 2020</p>
+      </div>
+
+      <!-- Hamburger icon for mobile view -->
+      <div class="hamburger" id="hamburger-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <div class="nav-bar" id="nav-links-container">
+        
+        <a href="/home" class="nav-links">Home</a>
+        <a href="/visit" class="nav-links">Visit</a>
+        <a href="/blog" class="nav-links">Blog</a>
+        <a href="/planday" class="nav-links">Plan a Day</a>
+      </div>
+    </div>
+  </header>
+
+  <script>
+  // Get the hamburger icon and nav links container
+  const hamburgerIcon = document.getElementById("hamburger-icon");
+  const navLinksContainer = document.getElementById("nav-links-container");
+
+  // Add an event listener to the hamburger icon
+  hamburgerIcon.addEventListener("click", () => {
+    navLinksContainer.classList.toggle("active"); // Toggle the "active" class
+  });
+</script>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Find ways to Reconnect with your Inner Child</h1>
+      <p class="hero-text">Explore activities that help you reconnect with your true self.</p>
+      <a href="/blog" class="button-blog">Join the Blog</a>
+    </div>
+
+    <!-- Hero image in HTML -->
+    <div class="hero-image">
+      <img src="/images/photos/header.jpg" alt="Hero Image">
+    </div>
+  </section>
