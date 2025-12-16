@@ -3,41 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reconnect – Manor Farm Park & Woodlands</title>
-  <link rel="stylesheet" href="visit.css">
+  <title>Reconnect – Visit</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="visit.css">
 </head>
-
 <body>
-  <header class="site-header">
 
-    <div class="nav-top">
-      <div class="header-titles">
-        <h1 class="header-main">Reconnect</h1>
-        <p class="header-sub">Healing since 2020</p>
-      </div>
+<!-- ================= HEADER ================= -->
+<header class="site-header">
 
-      <button class="hamburger" type="button" aria-label="Open menu" onclick="toggleMenu()">☰</button>
-    </div>
+  <div class="header-titles">
+    <h1 class="header-main">Reconnect</h1>
+    <p class="header-sub">Healing since 2020</p>
+  </div>
 
-    <nav class="nav-bar" id="navMenu">
-      <a href="home.html" class="nav-links">Home</a>
-      <a href="visit.html" class="nav-links">Visit</a>
-      <a href="blog.html" class="nav-links">Blog</a>
-      <a href="planday.html" class="nav-links">Plan a Day</a>
-    </nav>
+  <nav class="nav-desktop">
+    <a href="home.html" class="nav-links">Home</a>
+    <a href="visit.html" class="nav-links">Visit</a>
+    <a href="blog.html" class="nav-links">Blog</a>
+    <a href="planday.html" class="nav-links">Plan a Day</a>
+  </nav>
 
-  </header>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
 
+  <nav class="nav-mobile" id="navMenu">
+    <a href="home.html" class="nav-links">Home</a>
+    <a href="visit.html" class="nav-links">Visit</a>
+    <a href="blog.html" class="nav-links">Blog</a>
+    <a href="planday.html" class="nav-links">Plan a Day</a>
+  </nav>
 
-
+</header>
 
 <!-- ================= HERO ================= -->
 <section class="hero">
+
   <div class="hero-content">
     <h1 class="hero-title">Visit our Cherry-Picked Locations</h1>
   </div>
@@ -45,103 +50,70 @@
   <div class="hero-image">
     <img src="/images/photos/header.jpg" alt="Visit locations">
   </div>
+
 </section>
 
+<!-- ================= CITY PICKER ================= -->
 <section class="city-section">
 
-  <div class="city-text">
-    <h2 class="section-title-city">Pick your City</h2>
-    <p class="section-info-city">
-      Choose the city closest to where you are and we will recommend places to enjoy.
-    </p>
+  <h2 class="section-title">Pick your City</h2>
+  <p class="city-info">
+    Choose the city closest to you and we’ll recommend places to reconnect.
+  </p>
 
-    <!-- CITY DROPDOWN -->
-    <div class="city-dropdown">
-      <select id="citySelect" onchange="selectCity()">
-        <option value="">Select a city</option>
-        <option value="leicester">Leicester</option>
-        <option value="coming-soon">More coming soon…</option>
-      </select>
-    </div>
-  </div>
+  <select class="city-select">
+    <option value="">Select a city</option>
+    <option>Leicester</option>
+    <option>More coming soon…</option>
+  </select>
 
 </section>
-
 
 <!-- ================= SEPARATOR ================= -->
-<section class="seperator-one">
-  <img src="/images/photos/extrathings/serparator.png" alt="separator">
+<section class="separator">
+  <img src="/images/photos/extrathings/serparator.png" alt="">
 </section>
 
-<!-- ================= VISIT LOCATIONS ================= -->
+<!-- ================= LOCATIONS ================= -->
 <section class="visit-locations">
-  <h2 class="section-title-locations">Reconnect in Leicester</h2>
+
+  <h2 class="section-title">Reconnect in Leicester</h2>
+
+  <div class="visit-card">
+    <div class="visit-text">
+      <h3>National Space Centre</h3>
+      <p>Explore space through interactive exhibits and immersive learning.</p>
+      <a href="space.html" class="button">Learn More →</a>
+    </div>
+    <img src="/images/photos/visits.jpg" alt="">
+  </div>
+
+  <div class="visit-card">
+    <div class="visit-text">
+      <h3>Manor Farm Park & Woodlands</h3>
+      <p>Meet animals, explore woodlands and enjoy outdoor play.</p>
+      <a href="manor.html" class="button secondary">Learn More →</a>
+    </div>
+    <img src="/images/photos/visitm.jpeg" alt="">
+  </div>
+
+  <div class="visit-card">
+    <div class="visit-text">
+      <h3>Lane 7</h3>
+      <p>Bowling, arcade games and karaoke — perfect for friends.</p>
+      <a href="lane.html" class="button">Learn More →</a>
+    </div>
+    <img src="/images/photos/visitl.jpg" alt="">
+  </div>
+
 </section>
-
-<!-- ================= LOCATION SECTIONS ================= -->
-<section class="visit-card">
-  <div class="visit-text">
-    <h3>National Space Centre</h3>
-    <p>Explore space through interactive exhibits, immersive learning and science talks.</p>
-    <a href="space.html" class="visit-button">Learn More →</a>
-  </div>
-  <div class="visit-image">
-    <img src="/images/photos/visits.jpg" alt="Space Centre">
-  </div>
-</section>
-
-<section class="visit-card">
-  <div class="visit-text">
-    <h3>Manor Farm Park & Woodlands</h3>
-    <p>Feed, groom and meet animals while exploring woodlands and exciting play areas.</p>
-    <a href="manor.html" class="visit-button">Learn More →</a>
-  </div>
-  <div class="visit-image">
-    <img src="/images/photos/visitm.jpeg" alt="Manor Farm">
-  </div>
-</section>
-
-<section class="visit-card">
-  <div class="visit-text">
-    <h3>Lane 7</h3>
-    <p>Bowling, arcade games and karaoke — the perfect place to reconnect with friends.</p>
-    <a href="lane.html" class="visit-button">Learn More →</a>
-  </div>
-  <div class="visit-image">
-    <img src="/images/photos/visitl.jpg" alt="Lane 7">
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
-
-  <div class="footer-content">
-    <div class="footer-left">
-      <h2>Contact Us...</h2>
-      <p>Follow us on our socials for discounts and new events going on!</p>
-    </div>
-
-    <div class="contact-details">
-      <p>@ReconnectwithYourself</p>
-      <p>ReconnectwithYourself@info.com</p>
-      <p>+45 12 34 56 78</p>
-    </div>
-  </div>
-
+  <h2>Contact Us…</h2>
+  <p>@ReconnectwithYourself</p>
+  <p>ReconnectwithYourself@info.com</p>
+  <p>+45 12 34 56 78</p>
 </footer>
 
 <script>

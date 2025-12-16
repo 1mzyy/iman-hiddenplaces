@@ -5,31 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reconnect – Blog</title>
 
-  <link rel="stylesheet" href="blog.css">
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
-</head>
 
+  <link rel="stylesheet" href="blog.css">
+</head>
 <body>
 
-<!-- =========================
-     HEADER / NAV
-========================= -->
+<!-- ================= HEADER ================= -->
 <header class="site-header">
 
-  <div class="nav-top">
-    <div class="header-titles">
-      <h1 class="header-main">Reconnect</h1>
-      <p class="header-sub">Healing since 2020</p>
-    </div>
-
-    <button class="hamburger" onclick="toggleMenu()">☰</button>
+  <div class="header-titles">
+    <h1 class="header-main">Reconnect</h1>
+    <p class="header-sub">Healing since 2020</p>
   </div>
 
-  <nav class="nav-bar" id="navMenu">
+  <nav class="nav-desktop">
+    <a href="home.html" class="nav-links">Home</a>
+    <a href="visit.html" class="nav-links">Visit</a>
+    <a href="blog.html" class="nav-links">Blog</a>
+    <a href="planday.html" class="nav-links">Plan a Day</a>
+  </nav>
+
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+  <nav class="nav-mobile" id="navMenu">
     <a href="home.html" class="nav-links">Home</a>
     <a href="visit.html" class="nav-links">Visit</a>
     <a href="blog.html" class="nav-links">Blog</a>
@@ -38,30 +40,28 @@
 
 </header>
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- ================= HERO ================= -->
 <section class="hero">
+
   <div class="hero-content">
     <h1 class="hero-title">Join the Blog</h1>
   </div>
 
   <div class="hero-image">
-    <img src="/images/photos/header.jpg" alt="Hero Image">
+    <img src="/images/photos/header.jpg" alt="Hero image">
   </div>
+
 </section>
 
-<!-- =========================
-     ABOUT BLOGS
-========================= -->
+<!-- ================= ABOUT BLOG ================= -->
 <section class="about-blog">
 
   <div class="about-text">
-    <h2 class="about-title">About the Blogs</h2>
-    <p class="blog-details">
-      Our blogs are written by our users.
-      We encourage people to talk about their journey and how they got here.
-      You’ll also find professional blogs written by therapists and the creators of Reconnect.
+    <h2 class="section-title">About the Blogs</h2>
+    <p>
+      Our blogs are written by our users and professionals.
+      We encourage people to share their experiences, reflect on their inner child,
+      and connect with others on the same journey.
     </p>
   </div>
 
@@ -71,16 +71,12 @@
 
 </section>
 
-<!-- =========================
-     SEPARATOR
-========================= -->
+<!-- ================= SEPARATOR ================= -->
 <section class="separator">
   <img src="/images/photos/extrathings/serparator.png" alt="separator">
 </section>
 
-<!-- =========================
-     TODAYS PICK
-========================= -->
+<!-- ================= TODAY'S PICK ================= -->
 <section class="pick">
 
   <h2 class="section-title">Today’s Pick</h2>
@@ -90,7 +86,8 @@
     <div class="pick-text">
       <h3>Using Reconnect’s Planner</h3>
       <p>
-        Learn how to use our in-site day planner to make your fun day stress-free.
+        Learn how to use our day planner to create a stress-free,
+        joyful day out.
       </p>
       <a href="error.html" class="button">Read More →</a>
     </div>
@@ -102,29 +99,24 @@
 
 </section>
 
-<!-- =========================
-     SEPARATOR
-========================= -->
+<!-- ================= SEPARATOR ================= -->
 <section class="separator">
   <img src="/images/photos/extrathings/separatorgreen.png" alt="separator">
 </section>
 
-<!-- =========================
-     ALL BLOGS
-========================= -->
+<!-- ================= ALL BLOGS ================= -->
 <section class="all-blogs">
 
   <h2 class="section-title">All Blogs</h2>
   <img src="/images/photos/extrathings/underlineBeige.png" class="underline">
 
-  <!-- Blog Card -->
   <div class="blog-card">
     <div class="blog-text">
       <h3>Connect with your Inner Child</h3>
-      <p>Why reconnecting with your inner child matters — and how to start.</p>
+      <p>Why reconnecting matters — and how to start.</p>
       <a href="error.html" class="button secondary">Read More →</a>
     </div>
-    <img src="/images/photos/blog2.jpg" alt="Blog image">
+    <img src="/images/photos/blog2.jpg" alt="Blog">
   </div>
 
   <div class="blog-card">
@@ -133,36 +125,26 @@
       <p>Why we created Reconnect and how it supports healing.</p>
       <a href="error.html" class="button">Read More →</a>
     </div>
-    <img src="/images/photos/book1.jpg" alt="Blog image">
+    <img src="/images/photos/book1.jpg" alt="Blog">
   </div>
 
   <div class="blog-card">
     <div class="blog-text">
       <h3>Childhood Experiences</h3>
-      <p>Share your past and connect with people who understand.</p>
+      <p>Share memories and connect with others.</p>
       <a href="error.html" class="button secondary">Read More →</a>
     </div>
-    <img src="/images/photos/blog1.jpg" alt="Blog image">
+    <img src="/images/photos/blog1.jpg" alt="Blog">
   </div>
 
 </section>
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
-
-  <div class="footer-content">
-    <h2>Contact Us…</h2>
-    <p>Follow us for discounts and upcoming events</p>
-
-    <div class="contact-details">
-      <p>@ReconnectwithYourself</p>
-      <p>ReconnectwithYourself@info.com</p>
-      <p>+45 12 34 56 78</p>
-    </div>
-  </div>
-
+  <h2>Contact Us…</h2>
+  <p>@ReconnectwithYourself</p>
+  <p>ReconnectwithYourself@info.com</p>
+  <p>+45 12 34 56 78</p>
 </footer>
 
 <script>

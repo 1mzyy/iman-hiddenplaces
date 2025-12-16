@@ -1,12 +1,11 @@
-/* =========================
-   RESET & VARIABLES
-========================= */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ================= VARIABLES ================= */
 :root {
   --cream: #F9F4EA;
   --sage: #A9C28C;
@@ -15,30 +14,21 @@
   --brown: #4C3F2E;
 }
 
-/* =========================
-   BODY
-========================= */
+/* ================= BODY ================= */
 body {
   font-family: "Comfortaa", sans-serif;
   background: var(--cream);
   color: var(--brown);
 }
 
-/* =========================
-   HEADER / NAV
-========================= */
+/* ================= HEADER ================= */
 .site-header {
   position: sticky;
   top: 0;
   background: var(--sage);
+  padding: 20px 40px 30px;
+  text-align: center;
   z-index: 1000;
-  padding: 20px;
-}
-
-.nav-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header-main {
@@ -50,33 +40,40 @@ body {
   font-size: 16px;
 }
 
-.hamburger {
-  font-size: 32px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-bar {
-  display: none;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.nav-bar.active {
+.nav-desktop {
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .nav-links {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   color: var(--brown);
 }
 
-/* =========================
-   HERO
-========================= */
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 32px;
+  background: none;
+  border: none;
+}
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nav-mobile.active {
+  display: flex;
+}
+
+/* ================= HERO ================= */
 .hero {
   position: relative;
   height: 500px;
@@ -96,7 +93,7 @@ body {
 
 .hero-content {
   background: rgba(255,255,255,0.7);
-  padding: 25px 50px;
+  padding: 30px 60px;
   border-radius: 999px;
 }
 
@@ -105,11 +102,9 @@ body {
   font-size: clamp(36px, 6vw, 70px);
 }
 
-/* =========================
-   SECTIONS
-========================= */
+/* ================= SECTIONS ================= */
 section {
-  padding: 60px 20px;
+  padding: 70px 20px;
 }
 
 .section-title {
@@ -124,9 +119,7 @@ section {
   margin: 10px auto 40px;
 }
 
-/* =========================
-   ABOUT BLOG
-========================= */
+/* ================= ABOUT BLOG ================= */
 .about-blog {
   display: flex;
   gap: 40px;
@@ -139,9 +132,7 @@ section {
   border: 5px solid var(--sand);
 }
 
-/* =========================
-   PICK CARD
-========================= */
+/* ================= PICK + BLOG CARDS ================= */
 .pick-card,
 .blog-card {
   display: flex;
@@ -157,11 +148,10 @@ section {
   border: 5px solid var(--sand);
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* ================= BUTTONS ================= */
 .button {
   display: inline-block;
+  margin-top: 20px;
   padding: 14px 32px;
   border-radius: 30px;
   background: var(--sage);
@@ -174,35 +164,24 @@ section {
   background: var(--pink);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* ================= FOOTER ================= */
 .footer {
   background: var(--sand);
   padding: 40px;
   text-align: center;
 }
 
-/* =========================
-   DESKTOP
-========================= */
-@media (min-width: 900px) {
-  .hamburger {
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  .nav-desktop {
     display: none;
   }
 
-  .nav-bar {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
+  .hamburger {
+    display: block;
   }
-}
 
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
   .about-blog,
   .pick-card,
   .blog-card {

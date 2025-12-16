@@ -5,321 +5,200 @@
   box-sizing: border-box;
 }
 
-/*variables*/
+/* ================= VARIABLES ================= */
 :root {
   --cream: #F9F4EA;
   --sage: #A9C28C;
   --sand: #E7DCC5;
+  --pink: #E7B5C8;
   --brown: #4C3F2E;
-
-  --space-sm: 20px;
-  --space-md: 40px;
-  --space-lg: 80px;
 }
 
-/*body*/
+/* ================= BODY ================= */
 body {
-  background-color: var(--cream);
   font-family: "Comfortaa", sans-serif;
+  background: var(--cream);
   color: var(--brown);
-  font-size: 16px;
-  line-height: 1.5;
 }
-
-
-
-
-
 
 /* ================= HEADER ================= */
 .site-header {
   position: sticky;
   top: 0;
+  background: var(--sage);
+  padding: 20px 40px 30px;
+  text-align: left;
   z-index: 1000;
-  background-color: var(--sage);
-  padding: var(--space-sm);
-}
-
-/* Top row */
-.nav-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Logo */
-.header-titles {
-  display: flex;
-  flex-direction: column;
 }
 
 .header-main {
   font-family: "Pacifico", cursive;
-  font-weight: 300;
   font-size: 34px;
-  color: var(--brown);
-  line-height: 1.1;
 }
 
 .header-sub {
-  font-size: 14px;
-  color: var(--brown);
+  font-size: 16px;
 }
 
-/* Hamburger */
-.hamburger {
-  font-size: 34px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: var(--brown);
-}
-
-/* Nav (mobile default) */
-.nav-bar {
-  display: none;
-  flex-direction: column;
-  gap: 18px;
-  padding-top: 18px;
-}
-
-.nav-bar.active {
+.nav-desktop {
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .nav-links {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   color: var(--brown);
 }
 
-/* ================= DESKTOP ================= */
-@media (min-width: 900px) {
-
-  /* Hide hamburger */
-  .hamburger {
-    display: none;
-  }
-
-  /* Centre logo */
-  .nav-top {
-    justify-content: center;
-  }
-
-  .header-titles {
-    align-items: center;
-  }
-
-  /* Show nav horizontally */
-  .nav-bar {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 30px;
-    padding-top: 15px;
-  }
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 32px;
+  background: none;
+  border: none;
 }
 
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nav-mobile.active {
+  display: flex;
+}
+
+/* ================= HERO ================= */
 .hero {
   position: relative;
-  width: 100%;
-  min-height: 320px;
+  height: 420px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin-bottom: var(--space-lg);
-}
-
-.hero-image {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
+  justify-content: center;
 }
 
 .hero-image img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.4;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 .hero-content {
-  width: min(700px, 90%);
-  padding: 18px 22px;
-  background-color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.7);
+  padding: 28px 60px;
   border-radius: 999px;
 }
 
 .hero-title {
   font-family: "Pacifico", cursive;
-  font-weight: 300;
-  font-size: 40px;
-  color: var(--brown);
+  font-size: clamp(36px, 6vw, 64px);
 }
 
-/* ================= TITLES ================= */
-.section-title-city,
-.section-title-locations {
+/* ================= SECTIONS ================= */
+section {
+  padding: 70px 20px;
+}
+
+.section-title {
   font-family: "Pacifico", cursive;
-  font-weight: 300;
-  font-size: clamp(36px, 6vw, 70px);
+  font-size: clamp(36px, 6vw, 64px);
+  text-align: center;
   margin-bottom: 20px;
 }
 
-/* ================= VISIT SECTIONS ================= */
-
-
-/* =========================
-   CITY DROPDOWN
-========================= */
-.city-dropdown {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.city-dropdown select {
-  width: 280px;
-  padding: 14px 18px;
-  font-family: "Comfortaa", sans-serif;
+.city-info {
+  text-align: center;
   font-size: 18px;
-  color: #4C3F2E;
-  background-color: #E7DCC5;
-  border: none;
+  margin-bottom: 30px;
+}
+
+.city-select {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 24px;
+  font-size: 18px;
   border-radius: 30px;
-  cursor: pointer;
-  outline: none;
+  border: none;
+  background: var(--sand);
 }
 
-/* Hover / focus */
-.city-dropdown select:hover,
-.city-dropdown select:focus {
-  background-color: #d9ccb2;
-}
-
-/* Mobile scaling */
-@media (max-width: 768px) {
-  .city-dropdown select {
-    width: 100%;
-    max-width: 320px;
-  }
-}
-
+/* ================= VISIT CARDS ================= */
 .visit-card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 40px;
   gap: 40px;
+  margin-bottom: 70px;
 }
 
-.visit-text {
-  max-width: 600px;
-}
-
-.visit-text h3 {
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.visit-text p {
-  font-size: 20px;
-  line-height: 1.6;
-  margin: 20px 0;
-}
-
-.visit-button {
-  display: inline-block;
-  padding: 14px 32px;
-  background-color: #A9C28C;
-  color: #4C3F2E;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 700;
-}
-
-/* Images same size */
-.visit-image img {
+.visit-card img {
   width: 420px;
   height: 260px;
   object-fit: cover;
   border-radius: 200px 0 0 200px;
-  border: 5px solid #E7DCC5;
+  border: 5px solid var(--sand);
 }
 
-
-
-
-
-
-
-
-
-/* footer */
-
-.footer {
-  background-color: var(--sand);
-  padding: var(--space-md) var(--space-sm);
-  margin-top: var(--space-lg);
-  border-radius: 20px 20px 0 0;
-  text-align: center;
+.visit-text h3 {
+  font-size: 36px;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
+.visit-text p {
+  font-size: 20px;
+  margin: 20px 0;
 }
 
-.footer-left h2 {
-  font-family: "Pacifico", cursive;
-  font-weight: 300;
-  font-size: 34px;
+/* ================= BUTTONS ================= */
+.button {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 30px;
+  background: var(--sage);
   color: var(--brown);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.footer-left p {
-  font-size: 16px;
+.button.secondary {
+  background: var(--pink);
 }
 
-.contact-details p {
-  font-size: 16px;
-  line-height: 1.6;
+/* ================= FOOTER ================= */
+.footer {
+  background: var(--sand);
+  padding: 40px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
 }
 
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
 
-
-/* ================= DESKTOP ================= */
-@media (min-width: 900px) {
-
-  /* Desktop nav visible */
-  .hamburger {
+  .nav-desktop {
     display: none;
   }
 
-  .nav-bar {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 15px;
+  .hamburger {
+    display: block;
   }
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
 
   .visit-card {
     flex-direction: column;
     text-align: center;
   }
 
-  .visit-image img {
+  .visit-card img {
     width: 100%;
-    height: 200px;
+    height: 220px;
     border-radius: 20px;
   }
 }
