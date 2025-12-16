@@ -37,7 +37,7 @@ body {
   top: 0;
   z-index: 1000;
   background-color: var(--sage);
-  padding: 20px;
+  padding: var(--space-sm);
 }
 
 /* Top row */
