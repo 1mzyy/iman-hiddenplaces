@@ -371,7 +371,7 @@ section {
     font-size: 18px;
   }
 
-  /* Section headers: 70px */
+
   .info-title,
   .why-title,
   .event-title {
@@ -482,9 +482,7 @@ section {
   }
 }
 
-/* =========================
-   SMALL SCREENS EXTRA
-========================= */
+
 @media (max-width: 500px) {
   .hero-title {
     font-size: 34px;
